@@ -10,6 +10,7 @@ namespace Crypto.Genius.Service.Models
     [Serializable]
     public class Cryptogram
     {
+        public Guid Id { get; set; }
         public string Tip { get; set; }
         public string Answer { get; set; }
         public string Alphabet { get; set; }
@@ -20,8 +21,24 @@ namespace Crypto.Genius.Service.Models
         public Dictionary<string, string> Dictionary { get; set; }
 
 
+        public Cryptogram(string tip, string answer, Dictionary<string, string> dictionary)
+        {
+            this.Tip = tip;
+            this.Answer = answer;
+            this.Dictionary = dictionary;
+            this.Alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        }
+
         public Cryptogram()
         {
+            this.Id = Guid.NewGuid();
+            this.Dictionary = new Dictionary<string, string>();
+            this.Alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        }
+
+        public Cryptogram(Guid id)
+        {
+            this.Id = id;
             this.Dictionary = new Dictionary<string, string>();
             this.Alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         }
