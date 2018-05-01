@@ -33,3 +33,36 @@
         display: none
     }
 }
+
+
+.box{
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.letter{
+    width: 42px;
+    float: left;
+}
+
+input::placeholder {
+    color: red !important;
+    position: fixed;
+    left: 10px;
+    font-size: 12px;
+}
+
+::-moz-placeholder {
+    opacity: 1;
+}
+
+.label-letter{
+    position:absolute;
+    left: 5px;
+    top: 10px;
+    z-index: 10;
+}
+
+.box-bold{
+    border: 2px solid !important;
+}

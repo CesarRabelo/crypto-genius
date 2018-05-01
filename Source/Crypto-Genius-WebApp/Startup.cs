@@ -25,7 +25,7 @@ namespace Crypto_Genius_WebApp
         {
             services.AddMvc();
 
-            services.AddDbContext<CryptogramContext>(options => options.UseSqlite("Data Source=Cryptogram.db"));
+            //services.AddDbContext<CryptogramContext>(options => options.UseSqlite("Data Source=Cryptogram.db"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
