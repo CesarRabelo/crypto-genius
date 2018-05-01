@@ -23,9 +23,9 @@ namespace crypto.genius.service.Controllers
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public Cryptogram Get(int id)
         {
-            return "value";
+            return new Cryptogram();
         }
 
         // POST api/values

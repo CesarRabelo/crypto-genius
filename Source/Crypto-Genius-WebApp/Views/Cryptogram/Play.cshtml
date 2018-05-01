@@ -1,0 +1,33 @@
+﻿@model CryptoGeniusWebApp.Models.Cryptogram
+
+@{
+    ViewData["Title"] = "Play";
+}
+
+<h2>Play Cryptogram  </h2>
+<h3>Player: Cesar Rabelo Lima Junior </h3>
+
+<div class="container-fluid">
+    
+<div class="row">
+        <div class="col-md-12">
+            <h4>@Model.Tip</h4>
+         </div>
+        
+@foreach(var word in Model.GridWords)
+{
+    <div class="row">
+        <div class="col-md-4">@word.Tip</div>
+        <div class="col-md-8">
+            @foreach(var letter in @word.Letters)
+            {
+                <input type="text" maxlength="1" 
+                       class="form-control letter @(@letter.KeyVisible ? "" : "box-bold")" 
+                       placeholder="@(@letter.KeyVisible ? @letter.Key: "")"/>
+                
+            }
+         </div>
+    </div>
+}
+</div>
+    </div>

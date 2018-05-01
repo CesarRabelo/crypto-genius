@@ -1,11 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
-//using Crypto.Genius.Web.Models;
-
-namespace Crypto.Genius.Service.Models
+namespace CryptoGeniusWebApp.Models
 {
     [Serializable]
     public class Cryptogram
@@ -66,8 +62,8 @@ namespace Crypto.Genius.Service.Models
             this.GridWords.Add(new Word("Recrutar para o serviço militar.", "ALISTAR", this.Dictionary, 3));
             this.GridWords.Add(new Word("Caráter do trabalho do bombeiro.", "HEROICO", this.Dictionary, 3));
             this.GridWords.Add(new Word("Aviltar.", "DEGRADA", this.Dictionary, 3));
-            this.GridWords.Add(new Word("Matrimônio; casamento.", "NUPCIAS", this.Dictionary, 3));
-            this.GridWords.Add(new Word("Nascido sob o quinto signo do Zodíaco.", "LEONINO", this.Dictionary, 3));  
+            this.GridWords.Add(new Word("Matrimônio; casamento.", "NUPCIAS", this.Dictionary, 4));
+            this.GridWords.Add(new Word("Nascido sob o quinto signo do Zodíaco.", "LEONINO", this.Dictionary, 4));
 
         }
 
@@ -132,7 +128,7 @@ namespace Crypto.Genius.Service.Models
         /// <param name="length"></param>
         private void AddItemDictionary(char item, int length)
         {
-            
+
         }
     }
 
@@ -140,6 +136,6 @@ namespace Crypto.Genius.Service.Models
     {
         Number,
         Symbols,
-        Emotions,        
+        Emotions,
     }
 }

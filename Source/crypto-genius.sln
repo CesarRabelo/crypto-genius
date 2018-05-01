@@ -5,6 +5,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "crypto.genius.service", "cr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crypto.Genius.Web", "crypto-genius-web\crypto-genius-web\Crypto.Genius.Web.csproj", "{1D958C78-388C-4841-B88B-DB04B96A46C1}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "crypto-genius-xamarin", "crypto-genius-xamarin\crypto-genius-xamarin.shproj", "{F7634E5B-500F-4B91-8556-BBA443584248}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crypto-Genius-WebApp", "Crypto-Genius-WebApp\Crypto-Genius-WebApp.csproj", "{497921A2-32D6-403D-9ED2-A7600BAED91C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,5 +23,9 @@ Global
 		{1D958C78-388C-4841-B88B-DB04B96A46C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D958C78-388C-4841-B88B-DB04B96A46C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D958C78-388C-4841-B88B-DB04B96A46C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{497921A2-32D6-403D-9ED2-A7600BAED91C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{497921A2-32D6-403D-9ED2-A7600BAED91C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{497921A2-32D6-403D-9ED2-A7600BAED91C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{497921A2-32D6-403D-9ED2-A7600BAED91C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
