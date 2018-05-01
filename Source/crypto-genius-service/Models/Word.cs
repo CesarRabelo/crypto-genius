@@ -15,6 +15,7 @@ namespace Crypto.Genius.Service.Models
         public int InvisiblePositionLetter { get; set; }
         public bool Done { get; set; }
         private Dictionary<string, string> Dictionary;
+        public int Length { get; set; }
 
         public Word()
         {
@@ -32,6 +33,7 @@ namespace Crypto.Genius.Service.Models
         {
             this.Tip = tip;
             this.Answer = Answer;
+            this.Length = this.Answer.Length;
             this.InvisiblePositionLetter = invisiblePositionLetter;
             this.Letters = new List<Letter>();
             this.Dictionary = dictionary;
