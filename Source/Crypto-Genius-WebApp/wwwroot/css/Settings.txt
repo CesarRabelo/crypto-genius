@@ -1,0 +1,2 @@
+DataProvider: sqlserver
+DataConnectionString: Data Source=tcp:sakoola.database.windows.net,1433;Initial Catalog=dbSakoola;Persist Security Info=False;User ID=sakoola;Password=DB_s1k23l4_2017;MultipleActiveResultSets=False;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False

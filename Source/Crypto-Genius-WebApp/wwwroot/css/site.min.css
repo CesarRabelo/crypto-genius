@@ -1,1 +1,32 @@
 body{padding-top:50px;padding-bottom:20px}.body-content{padding-left:15px;padding-right:15px}.carousel-caption p{font-size:20px;line-height:1.4}.carousel-inner .item img[src$=".svg"]{width:100%}#qrCode{margin:15px}@media screen and (max-width:767px){.carousel-caption{display:none}}
+.box {
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.letter {
+    width: 42px;
+    float: left;
+}
+
+input::placeholder {
+    color: red !important;
+    position: fixed;
+    left: 10px;
+    font-size: 12px;
+}
+
+::-moz-placeholder {
+    opacity: 1;
+}
+
+.label-letter {
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    z-index: 10;
+}
+
+.box-bold {
+    border: 2px solid !important;
+}

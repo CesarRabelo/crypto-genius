@@ -22,8 +22,8 @@ namespace CryptoGeniusWebApp.Controllers
         public IActionResult Play(){
 
             Cryptogram crypto = new Cryptogram();
-            //crypto.GenerateModelPartidaEmpatada();
-            crypto.GenerateModelNabopolassar();
+            crypto.GenerateModelPartidaEmpatada();
+            //crypto.GenerateModelNabopolassar();
 
             //ViewBag.Player = HtmlEncoder.Default.Encode(player);
             //ViewBag.CrytogramId = crytogramId;
